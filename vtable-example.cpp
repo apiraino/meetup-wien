@@ -1,38 +1,28 @@
 ﻿#include <iostream>
 using namespace std;
 
-class Weapon
+class Draw
 {
     public:
-      virtual void features();
+      virtual void draw();
 };
 
-class Bomb : public Weapon
+class Button : public Draw
 {
     public:
-       void features()
-         { this->Weapon::features();
-           cout << "Loading bomb features.\n"; 
+       void draw()
+         { this->Draw::draw();
+           cout << "Drawing button.\n"; 
          }
-};
-
-class Loader
-{
-   public:
-     void loadFeatures(Weapon *weapon)
-     {
-        weapon->features();
-     }     
 };
 
 int main()
 {
-    Loader *l = new Loader;
-    Weapon *w;
-    Bomb b;
+    Draw *w;
+    Button b;
 
     w = &b;
-    w->features();
+    w->draw();
 
     return 0;
 }

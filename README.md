@@ -1,4 +1,4 @@
-https://hackmd.io/TABdCV28R2meaBx0SzOqBQ
+#### Wien, 24. Oktober 2019
 
 Code snippets can be run on [Compiler Explorer](https://godbolt.org)
 
